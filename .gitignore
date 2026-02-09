@@ -1,0 +1,16 @@
+# For testing purposes, we put the ginit folder inside of the project and not in .config
+ginit/
+
+# For similar reasons, I also have some ginit files for testing
+template1.ginit
+template2.ginit
+template3.ginit
+
+# .vscode folder, the reason is pretty obvious
+.vscode/
+
+# ignore the main binary file (obviously)
+main
+
+# ignore the ginitcompiler binary file (also pretty obvious)
+ginitcompiler
