@@ -25,10 +25,15 @@ int main(int argc, char *argv[]) {
     #error "This program only works on Unix (Linux/MacOS). Support might be added later."
     #endif
 
-    if (strcmp(argv[3], "--debug") == 0) {
-      debug_mode = 1;
-      printf("Entered Debug Mode.\n");
+    if (argv[3] == NULL) {
+        printf("Argv3 Doesnt exist");
+    } else {
+        if (strcmp(argv[3], "--debug") == 0) {
+            debug_mode = 1;
+            printf("Entered Debug Mode.\n");
+        }
     }
+
 
     if (argc < 2) {
       valid_command_error();
