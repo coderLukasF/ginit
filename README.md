@@ -45,5 +45,17 @@ but without the git part. Example:
 init
 remote add origin (your git server)
 ```
+
+Also you can use string interpolation but its really basic right now. All you can really do is use the folder name, so I might add more later
+Example of using it:
+
+```bash
+init
+remote add origin git@github.com/ginit/*fn*.git
+```
+add a * at the start and a * at the end. Right now, fn means folder name.
+Once there is enough of these I will make a seperate Markdown file for it.
+
+
 Yeah, and thats about it. I am too lazy to write a whole new programming language when this works just fine.
 

@@ -3,6 +3,7 @@
 #include <string.h>
 #include <unistd.h>
 #include "ginitcompiler.h"
+#include "returnnewtext.h"
 
 int debug_mode = 0;
 
@@ -26,7 +27,6 @@ int main(int argc, char *argv[]) {
     #endif
 
     if (argv[3] == NULL) {
-        printf("Argv3 Doesnt exist");
     } else {
         if (strcmp(argv[3], "--debug") == 0) {
             debug_mode = 1;
