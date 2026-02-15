@@ -13,7 +13,12 @@ $HOME
 ----templates/
     
 
-The 4 main commands: add, pull, remove, and init.
+The 4 main commands: add, pull, remove, and init. (Well really 5, but version doesnt really count)
+
+Version command:
+``` bash
+ginit version
+```
 
 Firstly: Add. Adding is literally just adding a template. I will explain how write valid syntax for .ginit later. Example:
 

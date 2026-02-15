@@ -1,5 +1,5 @@
 # For testing purposes, we put the ginit folder inside of the project and not in .config
-ginit/
+.ginit/
 
 # For similar reasons, I also have some ginit files for testing
 template1.ginit

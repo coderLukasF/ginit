@@ -12,6 +12,7 @@ int valid_command_error() {
     printf("add  | Adds a new template\n");
     printf("pull | Pulls (copy pastes) a template into your current directory\n");
     printf("init | Runs your git file and initializes your repository\n");
+    printf("version | Version of ginit");
 }
 
 int debug_print(char text[]) {
@@ -26,6 +27,12 @@ int main(int argc, char *argv[]) {
     #error "This program only works on Unix (Linux/MacOS). Support might be added later."
     #endif
 
+
+    if (strcmp(argv[1], "version") == 0) {
+        printf("0.7.0\n");
+        return 0;
+    } 
+
     if (argv[3] == NULL) {
     } else {
         if (strcmp(argv[3], "--debug") == 0) {
@@ -36,8 +43,8 @@ int main(int argc, char *argv[]) {
 
 
     if (argc < 2) {
-      valid_command_error();
-      return 1;
+        valid_command_error();
+        return 1;
     }
 
     FILE *f = fopen(argv[2], "r");
@@ -84,7 +91,9 @@ int main(int argc, char *argv[]) {
 
         //int rename_command[64];
         //snprintf(rename_command, sizeof(rename_command), "mv ")
-    } else {
+    }
+
+    else {
         valid_command_error();
     }
 }
